@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+
+aside {
+    display: flex;
+    flex: auto;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+figure {
+    position : absolute;
+    top: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 auto;
+    height: 100%;
+    width: auto;
+}
+
+section {
+    flex: auto;
+}

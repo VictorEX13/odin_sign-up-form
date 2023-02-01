@@ -8,6 +8,60 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <aside>
+        <figure>
+            <img src="" alt="The Odin Project's logo">
+        </figure>
 
+        <footer>Photo by <span>Halie West</span> on <span>Unsplash</span></footer>
+    </aside>
+
+    <main>
+        <section class="description">
+            <div class="description-text_container">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                </p>
+
+                <p>You know you want to.</p>
+            </div>
+        </section>
+
+        <section class="form_container">
+            <form action="/index.html" method="post" id="form1">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="e-mail">EMAIL</label>
+                    <input type="email" id="e-mail" name="e-mail" required>
+
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="pwd" required>
+
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="account-action">
+            <div class="action_container">
+                <button type="submit" form="form1">Create Account</button>
+
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

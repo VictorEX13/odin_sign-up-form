@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(/fonts/Norse-Bold.otf) format("opentype");
+}
+
 *,
 *::before,
 *::after {
@@ -6,34 +11,149 @@
     padding: 0;
 }
 
-body {
+* {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+body,
+aside,
+main,
+figure,
+.description,
+.form-controls,
+.control {
     display: flex;
+}
+
+body {
+    --button-color: #596D48;
     height: 100vh;
-    width: auto;
+}
+
+aside,
+main {
+    flex-direction: column;
+    height: 100%;
 }
 
 aside {
-    display: flex;
-    flex: auto;
-    height: 100%;
-    width: auto;
-    justify-content: center;
-    align-items: flex-end;
+    flex: 1 0 0;
+    justify-content: space-between;
+    background-image: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    padding-top: 10%;
+}
+
+figure,
+footer {
+    padding: 10px 0;
 }
 
 figure {
-    position : absolute;
-    top: 20%;
+    flex: 0 0 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+img {
+    height: 80px;
+    width: auto;
+}
+
+figcaption,
+footer,
+button {
+    color: white;
+}
+
+figcaption {
+    font-size: 6rem;
+    font-family: 'Norse Bold';
+}
+
+footer {
+    flex: 0 0 20px;
+    text-align: center;
+    font-size: 0.6rem;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    flex: 2 1 auto;
-    height: 100%;
-    width: auto;
+    flex: 2 0 0;
+    background-color: rgb(247, 247, 247);
+    padding: 30px 0 20px;
 }
 
 section {
     flex: auto;
+    padding: 0 40px;
+}
+
+.description {
+    flex-direction: column;
+    justify-content: end;
+    padding: 60px 40px 50px;
+}
+
+.description-text_container {
+    margin-right: 180px;
+}
+
+.description-text_container > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form_container {
+    background-color: #fff;
+    border-bottom: 10px;
+    border-color: #999;
+    padding: 20px 40px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    font-size: 0.7rem;
+}
+
+.form-controls {
+    gap: 20px 80px;
+    flex-wrap: wrap;
+    margin: 20px 250px 0 0;
+}
+
+.control {
+    flex-direction: column;
+    flex: 1 0 200px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 2rem;
+    padding: 10px;
+}
+
+.account-action {
+    padding: 30px 40px 150px;
+}
+
+button {
+    padding: 12px 50px;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+}
+
+p:last-of-type {
+    margin-top: 20px;
 }

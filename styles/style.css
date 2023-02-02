@@ -82,22 +82,22 @@ footer {
 main {
     flex: 2 0 0;
     background-color: rgb(247, 247, 247);
-    padding: 30px 0 20px;
+    padding: 30px 0 0;
 }
 
 section {
-    flex: auto;
+    flex: 1 1 auto;
     padding: 0 40px;
 }
 
 .description {
     flex-direction: column;
     justify-content: end;
-    padding: 60px 40px 50px;
+    max-height: 30%;
 }
 
 .description-text_container {
-    margin-right: 180px;
+    margin: 0 180px 40px 0;
 }
 
 .description-text_container > p {
@@ -106,10 +106,14 @@ section {
 }
 
 .form_container {
+    max-height: 300px;
     background-color: #fff;
     border-bottom: 10px;
     border-color: #999;
-    padding: 20px 40px;
+}
+
+form {
+    margin: 20px 0 0;
 }
 
 fieldset {
@@ -126,14 +130,22 @@ label {
 }
 
 .form-controls {
-    gap: 20px 80px;
+    gap: 20px 60px;
     flex-wrap: wrap;
-    margin: 20px 250px 0 0;
+    margin: 20px 50px 0 0;
 }
 
 .control {
     flex-direction: column;
-    flex: 1 0 200px;
+    flex: 0 1 150px;
+}
+
+.account-action {
+    max-height: 30%;
+}
+
+.action_container {
+    margin: 40px 0 0;
 }
 
 input {
@@ -144,15 +156,23 @@ input {
     outline: none;
 }
 
-.account-action {
-    padding: 30px 40px 150px;
-}
-
 button {
     padding: 12px 50px;
     background-color: var(--button-color);
     border: 1px solid var(--button-color);
     border-radius: 5px;
+}
+
+p > a {
+    text-decoration: none;
+}
+
+p > a:link {
+    color: var(--button-color);
+}
+
+p > a:visited {
+    color: rgb(4, 143, 38);
 }
 
 p:last-of-type {
